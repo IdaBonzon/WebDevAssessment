@@ -57,7 +57,7 @@ button {
 .carousel__item img {
     height: 400px;
     position: absolute;
-    right: 200px;
+    right: 100px;
     top: 5px;
 }
 .carousel__item h2 {
