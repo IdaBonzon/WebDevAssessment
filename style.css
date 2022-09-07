@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+p {
+    color: #555;
+}
+button {
+    padding: 5px;
+    background: #3d85c6;
+    border: none;
+    cursor: pointer;
+}
+.cart {
+    cursor: pointer;
+}
+.cart:before {
+    content: attr(data-count);
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+.cart.zero:before{
+    opacity: 1;
+}
+.btn {
+    display: inline-block;
+    background: #3d85c6;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0 0 50px;
+    border-radius: 30px;
+}
+.carousel {
+    position: relative;
+} 
+.carousel__item {
+    height: 400px;
+    background-color: #cfe2f3;
+    padding: 2em;
+    display: none;
+}
+.carousel__item img {
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    top: 5px;
+}
+.carousel__item h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0 0 50px;
+
+}
+.carousel__item p {
+    font-size: 23px;
+    line-height: 30px;
+    margin: 25px 0 0 50px;
+
+} 
+.carousel__item--selected {
+    display: block;
+}
+.carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #3d85c6;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
+}
+.container {
+    display: flex;
+    padding: 20px;
+}
+.navbar {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.categories {
+    margin: 70px 0;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-2 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.col-2 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.col-3 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.col-3 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.copyright {
+    font-size: 0.75rem;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .carousel .col-2, .col-3{
+        flex-basis: 100%;
+    }
+}

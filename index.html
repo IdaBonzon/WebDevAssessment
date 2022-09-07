@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Gadget Zone</h1>
+        </div>
+        <button id="cart"><img src="images/cart.png" width="30px" height="30px"></button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Items..</p>
+              </div>
+        </div>
+    </div>
+
+    <div class="top">
+        <div class="carousel">
+            <div class="carousel__item">
+                <div class="col-1"></div>
+                <h2>iPhone 13</h2>
+                <p>Apple's newest flagship iPhone at the more affordable end<br>
+                    with improved features and battery life.</p>
+                <img src="images/iphone13.png">
+                <a href="" class="btn">Buy Now</a>
+            </div>
+            <div class="carousel__item">
+                <h2>Samsung Galaxy S22</h2>
+                <p>The Galaxy S22 brings a seamless smartphone experience<br>
+                    with a Super Smooth 120Hz refresh rate.</p>
+                <img src="images/galaxys22.webp">
+                <a href="" class="btn">Buy Now</a>
+            </div>
+            <div class="carousel__item">
+                <h2>Samsung Galaxy Watch 5</h2>
+                <p>The watch that knows you best.<br>
+                 Galaxy Watch5 is your companion on your journey to a healthier you.</p>
+                <img src="images/GalaxyWatch5.webp">
+                <a href="" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categories">
+        <div class="small-container">
+            <h2>Mobile Phones</h2>
+            <div class="row">
+                <div class="col-2" id="p1">
+                    <img src="images/iphone12.png">
+                    <h4>Iphone 12</h4>
+                    <p>₱38,990</p>
+                    <button onclick="addToCart(p1)">Buy</button>
+                </div>
+                <div class="col-2" id="p2">
+                    <img src="images/iphone13.png">
+                    <h4>Iphone 13</h4>
+                    <p>₱44,990</p>
+                    <button>Buy</button>
+                </div>
+                <div class="col-2" id="p3">
+                    <img src="images/zflip3.webp">
+                    <h4>Samsung Z Flip 3</h4>
+                    <p>₱45,990</p>
+                    <button>Buy</button>
+                </div>
+                <div class="col-2" id="p4">
+                    <img src="images/galaxys22.png">
+                    <h4>Samsung Galaxy S22</h4>
+                    <p>₱49,990</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+            
+            <h2>Accessories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/airpods.jpg">
+                    <h4>Apple AirPods</h4>
+                    <p>₱10,990</p>
+                    <button>Buy</button>
+                </div>
+                <div class="col-3">
+                    <img src="images/BudsPro.jpg">
+                    <h4>Samsung Galaxy Buds Pro</h4>
+                    <p>₱7,990</p>
+                    <button>Buy</button>
+                </div>
+                <div class="col-3">
+                    <img src="images/applewatch.jpg">
+                    <h4>Apple Watch Series 3</h4>
+                    <p>₱11,490</p>
+                    <button>Buy</button>
+                </div>
+                <div class="col-3">
+                    <img src="images/GalaxyWatch5.png">
+                    <h4>Samsung Galaxy Watch 5</h4>
+                    <p>₱16,990</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="select">
+
+    </div>
+
+    <div class="footer">
+        <p class="copyright">© Copyright Ida Bonzon 2022 FED Basic Assessment.</p>
+      </div>
+<script src="index.js"></script>
+</body>
+</html>
